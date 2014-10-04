@@ -1,0 +1,127 @@
+
+body, html {
+    height: 100%;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.slide {
+    position: relative;
+    display: table;
+    text-align: center;
+}
+
+.slide div {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.slide h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #282828;
+    font-size: 62px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-family: "staticregular", Verdana, Tahoma;
+}
+
+.slide h2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #282828;
+    font-size: 31px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-family: "static_italic", Verdana, Tahoma;
+}
+
+hr {
+    width: 50%;
+    margin: 20px auto;
+    border-bottom: 1px solid #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.cover {
+    background-color: #000000;   
+}
+
+.cover img {
+    max-width: 90%;
+}
+
+.hi {
+    background-color: #eb5151;
+    font-family: "staticregular"
+}
+
+.hi p, {
+    color: #ccc;
+    font-weight: 300;
+}
+
+.hi img {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 8px #000;
+}
+
+.hi a {
+    color: #00fada;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity .3s ease;
+}
+
+.hi a:hover {
+    opacity: .6;
+}
+
+.code {
+    background-color: #51eb7d;
+    font-family: "staticregular";
+}
+
+.code p {
+    color: #eb5151;
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.code a {
+    color: #dafa00;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity .3s ease;
+}
+
+.last-slide {
+    background-color: #0a421a;
+    font-family: "staticregular";
+}
+
+.last-slide p {
+    color: #eb5151;
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.last-slide a {
+    color: #dafa00;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity .3s ease;
+}

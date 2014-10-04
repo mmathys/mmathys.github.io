@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Threadox</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/viewport-slider.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/page.css" type="text/css">
+</head>
+<body>
+    <div id="container" class="viewport-slider-container">
+        <section class="slide viewport-slide cover" data-label="Cover">
+            <div>
+                <p><img src="assets/img/logo.png" alt="logo"></p>
+            </div>
+        </section>
+        <section class="slide hi viewport-slide" data-label="Hi">
+            <div>
+                <h1>Hi,</h1>
+                <h2>I'm Threadox or Max Mathys and I am a digital native living in Switzerland. I'm a passionate coder and tech geek.</h2>
+                <br>
+                <img src="http://www.gravatar.com/avatar/91d59fa5a29dd075c5b8b2cfaffb7b04?s=100" alt="logo">
+                <br>
+                <p><a href="#" onclick="viewportSlider.paginate(2, null)">Code</a> | <a href="https://threadox.com/blog">Blog</a> | <a href="#" onclick="viewportSlider.paginate(3, null)">Everything else</a></p>
+            </div>
+        </section>
+       
+        <section class="slide code viewport-slide" data-label="Code">
+            <div>
+                <h1>Code</h1>
+                <br>
+                <p>I "work" at <a href="https://www.dolansoft.org/home">Dolansoft</a></p>
+                <br>
+                <p><a href="https://github.com/mmathys">Github</a></p>
+            </div>
+        </section>
+       
+        <section class="slide last-slide viewport-slide" data-label="Everything else">
+            <div>
+                <p>Contact me at <script type="text/javascript">document.write("mm"+"at"+"hy"+"s@thr"+"ead"+"ox"); document.write("."+"com");</script></p>
+                <p>Libraries used: <a href="https://github.com/necolas/normalize.css/">Normalize.css</a>, <a href="https://github.com/EightMedia/hammer.js/">Hammer.js</a>, <a href="https://github.com/daviferreira/viewport-slider/">Viewport Slider</a></p>
+          </div>
+        </section>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="assets/js/hammer.min.js"></script>
+    <script src="assets/js/viewport-slider.js"></script>
+    <script>
+        viewportSlider.init(document.getElementById("container"), ".slide");
+    </script>
+</body>
+</html>
