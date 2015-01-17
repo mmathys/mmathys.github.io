@@ -2,45 +2,38 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Threadox</title>
-    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/viewport-slider.css">
-    <link rel="stylesheet" href="assets/fonts/fonts.css" type="text/css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="description" content="Portfolio of Max Mathys">
+    <title>Max Mathys</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/page.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39642300-7', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </head>
 <body>
-    <div id="container" class="viewport-slider-container">
-        <section class="slide hi viewport-slide cover" data-label="Hi">
-            <div>
-                <h1>Hi,</h1>
-                <h2>I'm Max Mathys</h2>
-                <br>
-                <p><a href="#" onclick="viewportSlider.paginate(2, null)">Code</a> | <a href="#" onclick="viewportSlider.paginate(3, null)">Everything else</a></p>
-            </div>
-        </section>
-       
-        <section class="slide code viewport-slide" data-label="Code">
-            <div>
-                <h1>Code</h1>
-                <br>
-                <p>I "work" at <a href="https://www.dolansoft.org/">Dolansoft</a></p>
-                <br>
-                <p><a href="https://github.com/mmathys">Github</a></p>
-            </div>
-        </section>
-       
-        <section class="slide last-slide viewport-slide" data-label="Everything else">
-            <div>
-                <p>Contact me at <script type="text/javascript">document.write("<a href='mailto:m"+"a"+"x.mathys"+"@gma"+"i"+"l.com'>m"+"a"+"x.mathys"+"@gma"+"i"+"l.com</a>")</script></p>
-                <p>Used: <a href="https://github.com/necolas/normalize.css/">Normalize.css</a>, <a href="https://github.com/EightMedia/hammer.js/">Hammer.js</a>, <a href="https://github.com/daviferreira/viewport-slider/">Viewport Slider</a></p>
-          </div>
-        </section>
+  <div class="view">
+    <div class="mid">
+      <h1>Max Mathys</h1>
+      <div class="block">
+      </div>
+      <p class="lead">Zurich, Switzerland, 17</p>
+      <p class="description">Links</p>
+      <div class="icon">
+        <a href="mailto:max.mathys@gmail.com" class="fa fa-paper-plane"></a>
+        <a href="https://github.com/mmathys" class="fa fa-github"></a>
+      </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="assets/js/hammer.min.js"></script>
-    <script src="assets/js/viewport-slider.js"></script>
-    <script>
-        viewportSlider.init(document.getElementById("container"), ".slide");
-    </script>
+  </div>
 </body>
 </html>
