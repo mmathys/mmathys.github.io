@@ -3,11 +3,14 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+body {
+  background-color: #eee;
+}
+
 .view {
   height: 100vh;
   display: table;
   width: 100%;
-  background-color: #eee;
 }
 
 .mid {
