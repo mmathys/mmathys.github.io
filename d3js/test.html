@@ -8,6 +8,7 @@ text {
 
 </style>
 <body>
+<h1>Sample torrent peer origins</h1>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -25,7 +26,7 @@ var svg = d3.select("body").append("svg")
     .attr("height", diameter)
     .attr("class", "bubble");
 
-d3.json("data.json", function(error, root) {
+d3.json("datav2.json", function(error, root) {
   var node = svg.selectAll(".node")
       .data(bubble.nodes(classes(root))
       .filter(function(d) { return !d.children; }))
