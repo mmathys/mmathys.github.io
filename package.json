@@ -1,0 +1,25 @@
+{
+  "name": "mmathys.github.io",
+  "version": "1.0.0",
+  "description": "npm only for simple testing",
+  "main": "testing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmathys/mmathys.github.io.git"
+  },
+  "author": "Max Mathys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmathys/mmathys.github.io/issues"
+  },
+  "homepage": "https://github.com/mmathys/mmathys.github.io#readme",
+  "dependencies": {
+    "express": "^4.13.0",
+    "finalhandler": "^0.4.0",
+    "node": "0.0.0",
+    "serve-static": "^1.10.0"
+  }
+}
