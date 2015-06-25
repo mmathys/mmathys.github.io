@@ -27,14 +27,14 @@ h1 {
 
 p {
   font-family: 'Montserrat';
-  text-transform: uppercase;
 }
 
 p.lead {
   padding: 17px 0 3px;
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5px;$
+  text-transform: uppercase;
 }
 
 p.description{
@@ -42,6 +42,7 @@ p.description{
   font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.7px;
+  text-transform: uppercase;
 }
 
 .block {
