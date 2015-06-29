@@ -1,3 +1,7 @@
+/**
+*  Base Layout
+*******************************************************************************/
+
 html {
     height: 100%;
     -webkit-font-smoothing: antialiased;
@@ -27,9 +31,10 @@ h1 {
 
 p {
   font-family: 'Montserrat';
+  display: inline-block;
 }
 
-p.lead {
+p.about-lead {
   padding: 17px 0 3px;
   font-weight: 400;
   font-size: 14px;
@@ -37,7 +42,11 @@ p.lead {
   text-transform: uppercase;
 }
 
-p.description{
+.description {
+  margin-top: .6rem;
+}
+
+p.description-lead{
   padding: 10px 0 3px;
   font-weight: 700;
   font-size: 11px;
@@ -60,6 +69,10 @@ a {
   text-decoration: none;
 }
 
+/**
+*  Icons
+*******************************************************************************/
+/* icon colors */
 .icon-container {
   display: flex;
   flex-direction: row;
@@ -72,8 +85,6 @@ a {
   margin: 0 .2rem;
   justify-content: center;
   position: relative;
-
-
 }
 
 .icon a {
@@ -123,3 +134,57 @@ a {
 .lastfm { background-color: #ec9a96}
 .tumblr { background-color: #9aa2ae }
 .blocks { background-color: #a5c3db }
+
+
+/**
+*  Projects section
+*******************************************************************************/
+
+.projects {
+  margin-top: 1.2rem;
+}
+
+p.project-lead {
+  padding: 10px 0 3px;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+/* an item */
+
+.projects-wrap {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-item {
+  padding: .5rem 1rem 1rem 1rem;
+}
+
+.projects-item:hover > .project-name > p {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.project-name > p {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  padding-bottom: 3px;
+  margin-bottom: .2rem;
+  margin-top: 0;
+
+  /* transistion for border */
+  -webkit-transition: all 0.2s cubic-bezier(.5,1,.8,1);
+  -moz-transition: all 0.2s cubic-bezier(.5,1,.8,1);
+  -o-transition: all 0.2s cubic-bezier(.5,1,.8,1);
+  transition: all 0.2s cubic-bezier(.5,1,.8,1);
+}
+
+.project-description > p {
+  font-size: 13px;
+  color: #111;
+  margin: .3rem 0;
+  padding: 0;
+}
