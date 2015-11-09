@@ -5,7 +5,7 @@ angular.module('app', []).controller('controller', function($scope) {
     var songsterr = require('./songsterr');
     songsterr.getTabByUrl($scope.url, function(err, res){
       console.log(res);
-      saveFile(res.gp5, res.artist.name+" - "+res.title+" (downloaded from whatever).gp5")
+      saveFile(res.gp5, res.artist.name+" - "+res.title+" (420blazeit).gp5")
     });
   }
 });
