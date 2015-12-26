@@ -76,3 +76,36 @@ a:hover {
   font-weight: normal;
   color: $secondary;
 }
+
+
+/**
+ * Site content
+ */
+
+.page-content {
+  padding: 0;
+}
+
+.wrapper {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.page-heading {
+  color: $tertiary;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.home-section {
+  padding-bottom: 5em;
+}
+
+// projects
+
+.project-image {
+  margin-top: 20px;
+  max-width: 100%;
+}
