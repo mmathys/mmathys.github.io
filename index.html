@@ -1,92 +1,21 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-    <meta name="description" content="Max Mathys">
-    <title>Max Mathys</title>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" type="text/css">
-    <link rel="stylesheet" href="/assets/css/page.css" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+---
+layout: default
+---
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<div class="home">
 
-      ga('create', 'UA-39642300-7', 'auto');
-      ga('send', 'pageview');
+  <h1 class="page-heading">Projects</h1>
 
-    </script>
-</head>
-<body>
-  <div class="view">
-    <div class="mid">
-      <h1>Max Mathys</h1>
-      <div class="block">
-      </div>
-      <div class="about">
-        <p class="about-lead">Zurich, Switzerland, 18</p>
-      </div>
-      <div class="description">
-        <p class="description-lead">Places</p>
-      </div>
-      <div class="icon-container">
-        <div class="icon">
-          <div class="email background"></div>
-          <a href="mailto:max.mathys@gmail.com" class="fa fa-paper-plane"></a>
-        </div>
-        <div class="icon">
-          <div class="github background"></div>
-          <a href="https://github.com/mmathys" class="fa fa-github"></a>
-        </div>
-        <div class="icon">
-          <div class="lastfm background"></div>
-          <a href="http://www.last.fm/user/pakko_juoda" class="fa fa-lastfm"></a>
-        </div>
-      </div>
-      <div class="projects">
-        <p class="project-lead">Work and Projects</p>
-        <div class="projects-wrap">
-          <a href="http://albumreleases.xyz">
-            <div class="projects-item">
-                <div class="project-name">
-                  <p>albumreleases</p>
-                </div>
-                <div class="project-description">
-                  <p>Track your favourite artists and</p><br><p>get notified when a new album gets released</p>
-                </div>
-              </div>
-          </a>
-        </div>
-        <div class="projects-wrap">
-          <a href="//maturademo.github.io/">
-            <div class="projects-item">
-                <div class="project-name">
-                  <p>Matura Paper (2015)</p>
-                </div>
-                <div class="project-description">
-                  <p>Matriculation project on interactive diagrams (german)</p>
-                </div>
-              </div>
-          </a>
-        </div>
-        <div class="projects-wrap">
-          <a href="https://play.google.com/store/apps/details?id=org.dolansoft.students_service">
-            <div class="projects-item">
-                <div class="project-name">
-                  <p>Students Service (2013)</p>
-                </div>
-                <div class="project-description">
-                  <p>A platform to exchange school goods</p>
-                </div>
-              </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+  <h1 class="page-heading">Recent Work</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{post.url}}" >
+          <!--<img class="project-img" href="{{ post.url | prepend: site.baseurl }}">{{ site.baseurl }}/thumb/{{post.thumbnail }}</a>-->
+          <img class="project-img" src="{{ site.baseurl }}/thumb/{{post.thumbnail }}"></img>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

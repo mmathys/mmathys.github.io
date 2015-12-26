@@ -1,0 +1,78 @@
+/**
+ * custom font
+ */
+
+ @font-face{
+     font-family: "Helvetica Neue";
+     font-style: normal;
+     font-weight: 400;
+     src: url(/fonts/HelveticaNeue.woff2) format('woff2');
+ }
+
+ @font-face{
+     font-family: "Helvetica Neue";
+     font-style: normal;
+     font-weight: 500;
+     src: url(/fonts/HelveticaNeue-Medium.woff2) format('woff2');
+ }
+
+/**
+ * Some vars
+ */
+
+$primary: #464646;
+$secondary: #757575;
+$tertiary: #C0C0C0;
+
+/**
+ * Links
+ */
+
+a, a:visited {
+  color: $tertiary;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #999;
+}
+
+/**
+ * Header
+ */
+
+.site-header {
+  border-width: 0;
+}
+
+.header-wrapper {
+  padding: 5vh 0;
+}
+
+/**
+ * Contact
+ */
+
+.header-contact {
+    color: $tertiary;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+.header-contact > a {
+  font-weight: 500;
+}
+
+.header-title {
+  color: $primary;
+}
+
+.header-title > h1 {
+    font-weight: 500;
+}
+
+.header-description {
+  font-weight: normal;
+  color: $secondary;
+}
