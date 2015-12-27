@@ -2,6 +2,25 @@
 layout: default
 ---
 
+<script type="text/javascript">
+// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+$(document).ready( function() {
+  // init Masonry
+  var $grid = $('.post-list').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+  });
+  // layout Isotope after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry();
+  });
+
+});
+
+</script>
+
 <div class="home home-section">
   <h1 class="page-heading">Projects</h1>
   <a href="http://albumreleases.xyz">
@@ -13,14 +32,12 @@ layout: default
 
   <h1 class="page-heading">Recent Work</h1>
 
-  <ul class="post-list">
+  <div class="post-list">
+    <div class="grid-sizer"></div>
     {% for post in site.posts %}
-      <li>
-        <a href="{{post.url}}" >
-          <!--<img class="project-img" href="{{ post.url | prepend: site.baseurl }}">{{ site.baseurl }}/thumb/{{post.thumbnail }}</a>-->
-          <img class="project-img" src="{{ site.baseurl }}/thumb/{{post.thumbnail }}"></img>
-        </a>
-      </li>
+      <a class="grid-item" href="{{ post.url | prepend: site.baseurl }}">
+        <img class="project-img" src="{{ site.baseurl }}/thumb/{{post.thumbnail }}"></img>
+      </a>
     {% endfor %}
-  </ul>
+  </div>
 </div>

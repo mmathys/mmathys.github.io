@@ -1,9 +1,9 @@
 ---
 layout: work
-title:  ""
+title:  "testing the project"
 date:   2015-12-25 14:02:26 +0100
 categories: jekyll update
-thumbnail: cat-06.jpg
+thumbnail: tiger.jpg
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build 3245656345345345ite to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

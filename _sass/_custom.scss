@@ -109,3 +109,57 @@ a:hover {
   margin-top: 20px;
   max-width: 100%;
 }
+
+// work
+
+/* clear fix */
+.post-list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 46%;
+}
+
+.grid-item {
+  float: left;
+  margin: 2% 2%;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+/**
+ * Post layout
+ */
+
+.post-header {
+  padding-top: 7vh;
+  margin-bottom: 5vh;
+}
+
+.post-title {
+  font-weight: 500;
+  color: $primary;
+  letter-spacing: 0.5px;
+  font-size: 36px;
+  padding-bottom: 2vh;
+  margin: 0;
+}
+
+.post-meta {
+  font-weight: 400;
+  color: $secondary;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: "Helvetica Neue";
+  color: $primary;
+}
