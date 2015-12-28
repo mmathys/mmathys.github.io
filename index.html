@@ -10,7 +10,8 @@ $(document).ready( function() {
   var $grid = $('.post-list').masonry({
     itemSelector: '.grid-item',
     percentPosition: true,
-    columnWidth: '.grid-sizer'
+    columnWidth: '.grid-sizer',
+    gutter: '.gutter-sizer'
   });
   // layout Isotope after each image loads
   $grid.imagesLoaded().progress( function() {
@@ -34,10 +35,17 @@ $(document).ready( function() {
 
   <div class="post-list">
     <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
     {% for post in site.posts %}
+      {% if post.post %}
       <a class="grid-item" href="{{ post.url | prepend: site.baseurl }}">
         <img class="project-img" src="{{ site.baseurl }}/thumb/{{post.thumbnail }}"></img>
       </a>
+      {% else %}
+      <div class="grid-item">
+        <img class="project-img" src="{{ site.baseurl }}/thumb/{{post.thumbnail }}" data-action="zoom"></img>
+      </div>
+      {% endif %}
     {% endfor %}
   </div>
 </div>

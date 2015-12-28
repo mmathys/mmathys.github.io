@@ -25,6 +25,18 @@ $secondary: #757575;
 $tertiary: #C0C0C0;
 
 /**
+ * Layout general
+ */
+
+body {
+  margin: 20px;
+}
+
+img {
+  image-rendering: crisp-edges;
+}
+
+/**
  * Links
  */
 
@@ -53,11 +65,14 @@ a:hover {
  * Contact
  */
 
+.small-entry {
+  color: $tertiary;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
 .header-contact {
-    color: $tertiary;
-    font-size: 10px;
-    letter-spacing: 2px;
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .header-contact > a {
@@ -100,7 +115,7 @@ a:hover {
 }
 
 .home-section {
-  padding-bottom: 5em;
+  padding-bottom: 20vh;
 }
 
 // projects
@@ -121,17 +136,20 @@ a:hover {
 
 .grid-sizer,
 .grid-item {
-  width: 46%;
+  width: 49%;
+  margin-bottom: 2%;
+}
+
+.gutter-sizer {
+  width: 2%;
 }
 
 .grid-item {
   float: left;
-  margin: 2% 2%;
 }
 
 .grid-item img {
   display: block;
-  max-width: 100%;
 }
 
 /**
@@ -139,7 +157,7 @@ a:hover {
  */
 
 .post-header {
-  padding-top: 7vh;
+  padding-top: 6vh;
   margin-bottom: 5vh;
 }
 
@@ -148,6 +166,7 @@ a:hover {
   color: $primary;
   letter-spacing: 0.5px;
   font-size: 36px;
+  padding-top: 1vh;
   padding-bottom: 2vh;
   margin: 0;
 }
@@ -163,3 +182,30 @@ p {
   font-family: "Helvetica Neue";
   color: $primary;
 }
+
+.image-container {
+  margin: 10vh 0;
+}
+
+.postimg {
+  max-width: 600px;
+}
+
+/**
+ * util
+ */
+
+ .centerboth {
+   display:-webkit-box;
+   display:-webkit-flex;
+   display:-ms-flexbox;
+   display:flex;
+   -webkit-box-pack:center;
+   -webkit-justify-content:center;
+       -ms-flex-pack:center;
+           justify-content:center;
+   -webkit-box-align:center;
+   -webkit-align-items:center;
+       -ms-flex-align:center;
+           align-items:center;
+ }

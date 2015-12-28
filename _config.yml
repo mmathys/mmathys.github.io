@@ -27,3 +27,4 @@ defaults:
     values:
       layout: "work"
       whatever: "this is working"
+      post: true
