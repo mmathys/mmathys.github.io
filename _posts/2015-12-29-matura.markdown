@@ -11,8 +11,6 @@ For my [matriculation project](https://github.com/mmathys/Matura-Paper) I
 developed different types of interactuve diagrams, which can be shown on the
 web.
 
-[code repository](https://github.com/mmathys/Matura-Paper)
-
-[PDF](https://mmathys.github.io/maturapaper.pdf)
-
+[code repository](https://github.com/mmathys/Matura-Paper) / 
+[PDF](https://mmathys.github.io/maturapaper.pdf) /
 [demo page](https://maturademo.github.io/)
