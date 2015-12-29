@@ -6,6 +6,5 @@ categories: work
 thumbnail: Graph@512w.png
 images:
   - "Graph@1000w.png"
-  - "foodlife2.png"
 ---
 Branding for a [food blog on instagram](https://www.instagram.com/zurifoodlife/).
