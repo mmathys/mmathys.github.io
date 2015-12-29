@@ -15,4 +15,4 @@ web.
 
 [PDF](https://mmathys.github.io/maturapaper.pdf)
 
-[demo page](https://maturademo.github.io/).
+[demo page](https://maturademo.github.io/)
