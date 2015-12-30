@@ -19,8 +19,8 @@ web.
 </div>
 
 
-<div class="centerboth" style="padding:20px">
-  <video width="700" height="546" autoplay loop> //EDIT: loop="true" and  autoplay="autoplay" are deprecated
+<div class="centerboth" style="padding:10px">
+  <video style="max-width: 100%;" width="700" height="546" autoplay loop>
     <source src="/videos/demo.mp4" type="video/mp4" />
   </video>
 </div>
