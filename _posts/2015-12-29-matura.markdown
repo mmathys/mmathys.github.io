@@ -4,13 +4,23 @@ title:  "Matura Paper"
 date:   2015-12-19 14:02:26 +0100
 categories: work
 thumbnail: Graph@512w.png
-images:
-  - "Graph@1000w.png"
 ---
+
 For my [matriculation project](https://github.com/mmathys/Matura-Paper) I
 developed different types of interactuve diagrams, which can be shown on the
 web.
 
-[code repository](https://github.com/mmathys/Matura-Paper) / 
+[code repository](https://github.com/mmathys/Matura-Paper) /
 [PDF](https://mmathys.github.io/maturapaper.pdf) /
 [demo page](https://maturademo.github.io/)
+
+<div class="centerboth image-container">
+  <img class="postimg" src="/images/Graph@1000w.png" data-action="zoom">
+</div>
+
+
+<div class="centerboth" style="padding:20px">
+  <video width="700" height="546" autoplay loop> //EDIT: loop="true" and  autoplay="autoplay" are deprecated
+    <source src="/videos/demo.mp4" type="video/mp4" />
+  </video>
+</div>
