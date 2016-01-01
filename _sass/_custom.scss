@@ -74,12 +74,11 @@ a, a:visited, a:hover {
   font-size: 10px;
   letter-spacing: 2px;
   color: $tertiary;
-}
-
-.small-entry, .small-entry:hover, .small-entry:visited > a {
-  color: $tertiary;
-  text-decoration: underline;
-  font-weight: 500;
+  a {
+    color: $tertiary;
+    text-decoration: underline;
+    font-weight: 500;
+  }
 }
 
 .header-contact {
