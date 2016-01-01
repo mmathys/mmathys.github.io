@@ -25,21 +25,22 @@ and the design of user interfaces (Information-Seeking
 Mantra) were explained.
 
 The developed interactive chart implements interaction methods which are common
-(such as Zoom, Filter, Details-on-demand) or rarely used in practice
-(reduction of three- to two-dimensional scatter plots by projection).
+([such as Zoom, Filter, Details-on-demand](https://maturademo.github.io/layout/)) or rarely used in practice
+([reduction of three- to two-dimensional scatter plots by projection](http://maturademo.github.io/3d/)).
 
-
-[code repository](https://github.com/mmathys/Matura-Paper) /
-[PDF](https://mmathys.github.io/maturapaper.pdf) /
-[demo page](https://maturademo.github.io/)
 
 <div class="centerboth image-container">
   <img class="postimg" src="/images/Graph@1000w.png" data-action="zoom">
 </div>
 
 
-<div class="centerboth" style="padding:10px">
+<div class="centerboth" style="padding:10px; margin-bottom: 40px;">
   <video style="max-width: 100%;" width="700" height="546" autoplay loop>
     <source src="/videos/demo.mp4" type="video/mp4" />
   </video>
 </div>
+
+
+[code repository](https://github.com/mmathys/Matura-Paper) /
+[PDF](https://mmathys.github.io/maturapaper.pdf) /
+[demo page](https://maturademo.github.io/)

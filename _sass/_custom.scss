@@ -23,6 +23,7 @@
 $primary: #464646;
 $secondary: #757575;
 $tertiary: #C0C0C0;
+$basefont: 20px;
 
 /**
  * Layout general
@@ -40,13 +41,17 @@ img {
  * Links
  */
 
-a, a:visited {
-  color: $tertiary;
-  text-decoration: underline;
+@mixin underline($fontsize) {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 $fontsize + 1px;
 }
 
-a:hover {
-  color: #999;
+a, a:visited, a:hover {
+  color: $primary;
+  text-decoration: none;
+  @include underline($basefont);
 }
 
 /**
@@ -65,18 +70,20 @@ a:hover {
  * Contact
  */
 
-.small-entry {
-  color: $tertiary;
+.small-entry, .small-entry:hover, .small-entry:visited {
   font-size: 10px;
   letter-spacing: 2px;
+  color: $tertiary;
+}
+
+.small-entry, .small-entry:hover, .small-entry:visited > a {
+  color: $tertiary;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 .header-contact {
   padding-bottom: 20px;
-}
-
-.header-contact > a {
-  font-weight: 500;
 }
 
 .header-title {
@@ -181,7 +188,7 @@ a:hover {
 p {
   font-family: "Helvetica Neue";
   color: $primary;
-  font-size: 20px;
+  font-size: $basefont;
   line-height: 35px;
 }
 
