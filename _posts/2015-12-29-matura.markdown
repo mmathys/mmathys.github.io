@@ -10,6 +10,25 @@ For my [matriculation project](https://github.com/mmathys/Matura-Paper) I
 developed different types of interactuve diagrams, which can be shown on the
 web.
 
+In this paper it was investigated how point and line graphs can be improved by
+interaction, so that the user can deal more efficiently with the presented data
+and the analysis and the understanding of the data is simplified.
+
+A web application for the display of 2- and 3-dimensional data sets
+was developed. The technology of a web application has been
+presented (JavaScript, HTML, CSS, SVG), the application design (UI,
+configuration, filtering, mapping, rendering) and problems
+which occurred during the development have been documented.
+
+In this work the concepts of data visualization (Visualization Pipeline)
+and the design of user interfaces (Information-Seeking
+Mantra) were explained.
+
+The developed interactive chart implements interaction methods which are common
+(such as Zoom, Filter, Details-on-demand) or rarely used in practice
+(reduction of three- to two-dimensional scatter plots by projection).
+
+
 [code repository](https://github.com/mmathys/Matura-Paper) /
 [PDF](https://mmathys.github.io/maturapaper.pdf) /
 [demo page](https://maturademo.github.io/)
