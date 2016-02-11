@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sketch</title>
+    <!-- <meta name="viewport" content="minimal-ui"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/css/so.css">
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/touch-icon.png" />
+  </head>
+  <body>
+    <div class="fsWrap">
+      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+          <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+          </div>
+          <div class="pswp__ui">
+            <div class="pswp__top-bar"><div class="pswp__preloader"></div></div>
+          </div>
+        </div>
+      </div>
+      <div id="document">
+        <h1>No Content</h1>
+        <h2>To view your Sketch Documents in a Browser, we just need some content.</h2>
+      </div>
+      <div id="footer">Made in <a href="http://sketchapp.com/">Sketch</a> by <a href="http://bohemiancoding.com">Bohemian Coding</a> © 2015</div>
+      <script id="tmpl" type="x-tmpl-mustache">
+        <div class="header">
+          <a href="http://sketchapp.com" class="logo button" title="Sketch" />
+          <span id="title">{{name}}<span class="ext">.sketch</span></span>
+          <div class="buttons">
+            <a href="document/{{url}}" class="button button-dl hide" title="Download" />
+            <button class="button button-share hide" title="Share"></button>
+            <button type="submit" class="button button-fs" title="Toggle fullscreen"></button>
+          </div>
+        </div>
+        <div class="list">    
+          {{#contents.pages}}
+          {{#artboards}}
+          <div class="artboard">
+            <p><span>{{name}}</span></p>
+            <img class="artboard-img" src="document/{{url}}" alt="{{name}}" data-size="{{width}}x{{height}}" />
+          </div>
+          {{/artboards}}
+          {{/contents.pages}}
+        </div>
+      </script>
+      <div class="share-modal">
+        <div class="share-bg"></div>
+        <div class="share-menu">
+          <ul>
+            <li>Share Sketch file…</li>
+            <li>
+              <a href="#" class="twitter" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <a href="#" class="facebook">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="/js/so.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
