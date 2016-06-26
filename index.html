@@ -2,50 +2,46 @@
 layout: default
 ---
 
-<script type="text/javascript">
-// external js: masonry.pkgd.js, imagesloaded.pkgd.js
-
-$(document).ready( function() {
-  // init Masonry
-  var $grid = $('.post-list').masonry({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    columnWidth: '.grid-sizer',
-    gutter: '.gutter-sizer'
-  });
-  // layout Isotope after each image loads
-  $grid.imagesLoaded().progress( function() {
-    $grid.masonry();
-  });
-
-});
-
-</script>
-
-<div class="home home-section">
-  <h1 class="page-heading">Projects</h1>
-  <a href="http://mmathys.github.io/work/2015/11/25/albumreleases.html">
-    <img src="/images/showoff@page.png" class="project-image">
-  </a>
+<div class="vh-container mantra-container">
+  <div class="wrapper">
+    <p>WE&#8217;RE</p>
+    <p>ALL</p>
+    <p>CONNECTED</p>
+  </div>
 </div>
 
-<div class="home">
+<div class="vh-container intro-container">
+  <div class="wrapper">
+    <p>
+      I&#8217;m Max Mathys, a digital native.
+    </p>
+    <p>
+      My work involves Data Analytics and Visualization.
+    </p>
+    <p>
+      I&#8217;m currently working at Swisscom in Zurich, Switzerland.
+    </p>
+  </div>
+</div>
 
-  <h1 class="page-heading">Recent Work</h1>
-
-  <div class="post-list">
-    <div class="grid-sizer"></div>
-    <div class="gutter-sizer"></div>
-    {% for post in site.posts %}
-      {% if post.post %}
-      <a class="grid-item" href="{{ post.url | prepend: site.baseurl }}">
-        <img class="project-img" src="{{ site.baseurl }}/thumb/{{post.thumbnail }}"></img>
-      </a>
-      {% else %}
-      <div class="grid-item">
-        <img class="project-img" src="{{ site.baseurl }}/thumb/{{post.thumbnail }}" data-action="zoom"></img>
-      </div>
-      {% endif %}
-    {% endfor %}
+<div class="vh-container showcase-container">
+  <div class="wrapper">
+    <p class="showcase-tag">
+      RECENT WORK
+    </p>
+    <p class="showcase-title">
+      Developing interactive web diagrams
+    </p>
+    <p class="showcase-description">
+      In Big Data, data collection presents only a minor challenge.
+      The real difficulty lies in analyzing and extracting information.
+      This paper discusses the principles of information-seeking application design.
+      This paper won the award for the best matriculation project in Computer Science at ETH Zurich.
+    </p>
+    <div class="showcase-linkcontainer">
+      <a class="showcase-link">view the demos</a>
+      <a class="showcase-link">view the abstract</a>
+      <a class="showcase-link">view the paper (german)</a>
+    </div>
   </div>
 </div>

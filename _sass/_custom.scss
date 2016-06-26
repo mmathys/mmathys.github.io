@@ -2,39 +2,36 @@
  * custom font
  */
 
- @font-face{
-     font-family: "Helvetica Neue";
-     font-style: normal;
-     font-weight: 400;
-     src: url(/fonts/HelveticaNeue.woff2) format('woff2');
+ @font-face {
+ 	font-family: 'MaisonNeue-Bold';
+ 	src: url(/fonts/maison-neue-bold.woff) format('woff');
+ }
+ @font-face {
+ 	font-family: 'MaisonNeue-Book';
+ 	src: url(/fonts/maison-neue-book.woff) format('woff');
  }
 
- @font-face{
-     font-family: "Helvetica Neue";
-     font-style: normal;
-     font-weight: 500;
-     src: url(/fonts/HelveticaNeue-Medium.woff2) format('woff2');
- }
 
 /**
  * Some vars
  */
-
-$primary: #464646;
-$secondary: #757575;
-$tertiary: #C0C0C0;
-$basefont: 20px;
 
 /**
  * Layout general
  */
 
 body {
-  margin: 20px;
+  //margin: 0px;
+
 }
 
 img {
   image-rendering: crisp-edges;
+}
+
+.vh-container{
+  height: 100vh;
+  width: 100%;
 }
 
 /**
@@ -49,155 +46,10 @@ img {
 }
 
 a, a:visited, a:hover {
-  color: $primary;
+  //color: $primary;
+  font-size: $base-font-size;
   text-decoration: none;
-  @include underline($basefont);
-}
-
-/**
- * Header
- */
-
-.site-header {
-  border-width: 0;
-}
-
-.header-wrapper {
-  padding: 5vh 0;
-}
-
-/**
- * Contact
- */
-
-.small-entry, .small-entry:hover, .small-entry:visited {
-  font-size: 10px;
-  letter-spacing: 2px;
-  color: $tertiary;
-  a {
-    color: $tertiary;
-    text-decoration: underline;
-    font-weight: 500;
-  }
-}
-
-.header-contact {
-  padding-bottom: 20px;
-}
-
-.header-title {
-  color: $primary;
-}
-
-.header-title > h1 {
-    font-weight: 500;
-}
-
-.header-description {
-  font-weight: normal;
-  color: $secondary;
-}
-
-
-/**
- * Site content
- */
-
-.page-content {
-  padding: 0;
-}
-
-.wrapper {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.page-heading {
-  color: $tertiary;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 2px;
-}
-
-.home-section {
-  padding-bottom: 20vh;
-}
-
-// projects
-
-.project-image {
-  margin-top: 20px;
-  max-width: 100%;
-}
-
-// work
-
-/* clear fix */
-.post-list:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.grid-sizer,
-.grid-item {
-  width: 49%;
-  margin-bottom: 2%;
-}
-
-.gutter-sizer {
-  width: 2%;
-}
-
-.grid-item {
-  float: left;
-}
-
-.grid-item img {
-  display: block;
-}
-
-/**
- * Post layout
- */
-
-.post-header {
-  padding-top: 6vh;
-  margin-bottom: 5vh;
-}
-
-.post-title {
-  font-weight: 500;
-  color: $primary;
-  letter-spacing: 0.5px;
-  font-size: 36px;
-  padding-top: 1vh;
-  padding-bottom: 2vh;
-  margin: 0;
-}
-
-.post-meta {
-  font-weight: 400;
-  color: $secondary;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-p {
-  font-family: "Helvetica Neue";
-  color: $primary;
-  font-size: $basefont;
-  line-height: 35px;
-}
-
-.image-container {
-  margin: 10vh 0;
-}
-
-.postimg {
-  width: 700px;
-  max-width: 100%;
+  @include underline($base-font-size);
 }
 
 /**
