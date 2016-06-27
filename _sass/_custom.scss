@@ -21,10 +21,12 @@
  */
 
 body {
-  //margin: 0px
+  background-color: black;
+  height: 100%;
 }
 
 .page-content {
+  z-index: 1000;
   padding: 0;
 }
 

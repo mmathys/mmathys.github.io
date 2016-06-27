@@ -13,12 +13,12 @@
 
 .footer-item, .footer-item:visited {
   @extend .footer-item-plain;
-  border-bottom: .13em solid #fff;
+  border-bottom: .2em solid #fff;
   transition: all 0.1s ease-out 0s;
 }
 
 .footer-item:hover {
   $c1: darken($colorfulcolor, 20);
   color: $c1;
-  border-bottom: .13em solid $c1;
+  border-bottom: .2em solid $c1;
 }
