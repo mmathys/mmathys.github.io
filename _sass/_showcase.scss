@@ -21,6 +21,12 @@
 
 .showcase-linkcontainer {
   padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: center;
 }
 
 .showcase-link, .showcase-link:hover {
@@ -29,5 +35,6 @@
   font-size: 1.2em;
   margin-right: 2em;
   white-space:nowrap;
+  //margin-bottom: 2em;
   //TODO
 }

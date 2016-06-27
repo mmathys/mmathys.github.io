@@ -62,10 +62,10 @@ a,a:visited  {
   margin-bottom: 2em;
   transition: all 0.1s ease-out 0s;
 }
-
+$colorfulcolor: #b0dab9;
 a:hover {
   text-decoration: none;
-  $c1: darken(#b0dab9, 20);
+  $c1: darken($colorfulcolor, 20);
   color: $c1;
   border-bottom: .2em solid $c1;
 }
