@@ -16,6 +16,9 @@ github_username:  mmathys
 
 # Build settings
 markdown: kramdown
+gems:
+  - octopress-autoprefixer
+
 
 # post defaults
 
