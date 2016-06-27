@@ -52,11 +52,22 @@ img {
  // -------------------------------------------------------
  // The good stuff by Bermon Painter
  // -------------------------------------------------------
-a, a:hover {
+
+$bc: #000;
+a,a:visited  {
+  color: #000;
   text-decoration: none;
-  border-bottom: .2em solid black;
+  border-bottom: .2em solid #000;
   padding-bottom: .2em;
   margin-bottom: 2em;
+  transition: all 0.1s ease-out 0s;
+}
+
+a:hover {
+  text-decoration: none;
+  $c1: darken(#b0dab9, 20);
+  color: $c1;
+  border-bottom: .2em solid $c1;
 }
 
  a.happy-hover {
