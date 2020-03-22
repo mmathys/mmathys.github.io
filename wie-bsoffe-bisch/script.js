@@ -1,4 +1,5 @@
-mode = "max"
+violaLevel = 2
+maxLevel = 1
 
 messages = [
     "Du bisch nüchtern, gurl", // 1
@@ -17,10 +18,12 @@ $("#max").click(function() {
     console.log("max")
     $("#max").addClass("active")
     $("#viola").removeClass("active")
+    $("#level").html(maxLevel)
 })
 
 $("#viola").click(function() {
     console.log("viola")
     $("#viola").addClass("active")
     $("#max").removeClass("active")
+    $("#level").html(violaLevel)
 })
