@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'titling';
+    src: url('./titling-gothic/font.eot'); /* IE9 Compat Modes */
+    src: url('./titling-gothic/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./titling-gothic/font.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./titling-gothic/font.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./titling-gothic/font.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./titling-gothic/font.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+html, body {
+    height: 100%;
+    color: white;
+}
+
+body {
+    font-family: "titling";
+    background: rgb(63,223,218);
+    background: linear-gradient(180deg, rgba(63,223,218,1) 0%, rgba(30,171,205,1) 100%);
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.names {
+    display: flex;
+    margin: 40px 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.name {
+    margin: 0 20px;
+    font-size: 1.4rem;   
+}
+
+.level-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secondary {
+    font-size: .8rem;
+    letter-spacing: .2rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.number {
+    font-size: 3rem;
+}
+
+.message {
+
+}
+
+.btn-container {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+.btn {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
