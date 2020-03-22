@@ -38,6 +38,12 @@ body {
 .name {
     margin: 0 20px;
     font-size: 1.4rem;   
+    padding: 5px 20px;
+}
+
+.active {
+    background-color: white;
+    color: black;
 }
 
 .level-container {
