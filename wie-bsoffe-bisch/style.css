@@ -82,3 +82,13 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.drink {
+    background-color: white;
+    padding: 40px 0;
+    color: black;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
