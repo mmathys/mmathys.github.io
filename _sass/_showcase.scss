@@ -1,0 +1,40 @@
+.showcase-container {
+  background-color: white;
+  color: black;
+  padding: 2em 0;
+}
+
+.showcase-tag {
+  letter-spacing: .3em;
+  margin-bottom: 2em;
+}
+
+.showcase-title {
+  font-size: $prettybig;
+}
+
+.showcase-description {
+  font-family: "MaisonNeue-Book";
+  font-size: 1.3em;
+  line-height: 1.8em;
+}
+
+.showcase-linkcontainer {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: center;
+}
+
+.showcase-link, .showcase-link:hover {
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-size: 1.2em;
+  margin-right: 2em;
+  white-space:nowrap;
+  //margin-bottom: 2em;
+  //TODO
+}

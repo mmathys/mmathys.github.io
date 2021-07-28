@@ -1,0 +1,133 @@
+/**
+ * custom font
+ */
+
+ @font-face {
+ 	font-family: 'MaisonNeue-Bold';
+ 	src: url(/fonts/maison-neue-bold.woff) format('woff');
+ }
+ @font-face {
+ 	font-family: 'MaisonNeue-Book';
+ 	src: url(/fonts/maison-neue-book.woff) format('woff');
+ }
+
+
+/**
+ * Some vars
+ */
+
+/**
+ * Layout general
+ */
+
+body {
+  background-color: black;
+  height: 100%;
+}
+
+.page-content {
+  z-index: 1000;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 1em;
+}
+
+img {
+  image-rendering: crisp-edges;
+}
+
+.vh-container{
+  min-height: 100vh;
+  width: 100%;
+}
+
+.vh-container-inline {
+  display: inline-block;
+}
+
+.semitransparent {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/**
+ * Links
+ */
+
+ // -------------------------------------------------------
+ // The good stuff by Bermon Painter
+ // -------------------------------------------------------
+
+$bc: #000;
+a,a:visited  {
+  color: #000;
+  text-decoration: none;
+  border-bottom: .2em solid #000;
+  padding-bottom: .2em;
+  margin-bottom: 2em;
+  transition: all 0.1s ease-out 0s;
+}
+$colorfulcolor: #b0dab9;
+a:hover {
+  text-decoration: none;
+  $c1: darken($colorfulcolor, 20);
+  color: $c1;
+  border-bottom: .2em solid $c1;
+}
+
+ a.happy-hover {
+   position: relative;
+   -webkit-backface-visibility: hidden; // prevents an annoying flicker on hover
+   &:focus {
+     outline: 0;
+   }
+   // Creates the lines under the text
+   &:after,
+   &:before {
+     background-color: #fff;
+     content: "";
+     height: 2px;
+     position: absolute;
+       bottom: 0;
+       left: 0;
+     width: 100%;
+   }
+   &:after {
+     opacity: .4;
+   }
+   &:before {
+     transform: scaleX(0);
+     transition: all 0.3s ease-in-out 0s;
+   }
+   &:hover:before,
+   &:focus:before,
+   &:active:before {
+     transform: scaleX(1);
+     transform: scaleX(1);
+   }
+ }
+
+/**
+ * util
+ */
+
+ .centervert {
+   display: flex;
+   align-items: center;
+ }
+
+ .centerboth {
+   display:-webkit-box;
+   display:-webkit-flex;
+   display:-ms-flexbox;
+   display:flex;
+   -webkit-box-pack:center;
+   -webkit-justify-content:center;
+       -ms-flex-pack:center;
+           justify-content:center;
+   -webkit-box-align:center;
+   -webkit-align-items:center;
+       -ms-flex-align:center;
+           align-items:center;
+ }
