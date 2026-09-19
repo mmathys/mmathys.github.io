@@ -1,0 +1,141 @@
+:root {
+  --paper:      #FBFAF7;
+  --ink:        #000000;
+  --ink-muted:  #6E6C66;
+  --rule:       #E7E4DC;
+  --accent:     #1F4B8E;
+
+  --measure:    62ch;
+  --gutter:     clamp(1.5rem, 8vw, 9rem);
+}
+
+/* On phones the 8vw gutter eats too much of the line; a fixed narrow gutter
+   gives the text room while staying clear of curved screen edges. */
+@media (max-width: 40rem) {
+  :root { --gutter: 1.25rem; }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* The :not() lets the debug toggle force light while the OS is dark. */
+  :root:not([data-theme="light"]) {
+    --paper:      #0D0D0C;
+    --ink:        #EDEBE5;
+    --ink-muted:  #8C8A83;
+    --rule:       #26261F;
+    --accent:     #8FB4E8;
+  }
+}
+
+/* Same values, applied when the toggle forces dark on a light OS. */
+:root[data-theme="dark"] {
+  --paper:      #0D0D0C;
+  --ink:        #EDEBE5;
+  --ink-muted:  #8C8A83;
+  --rule:       #26261F;
+  --accent:     #8FB4E8;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: clamp(3.5rem, 12vh, 8rem) var(--gutter) 6rem;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.65;
+  font-optical-sizing: auto;
+}
+
+main { max-width: var(--measure); }
+
+/* The one bold move: the name, set large and light. */
+h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 3.4rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+}
+
+.lede {
+  margin: 0.9rem 0 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+
+section { margin-top: 3.25rem; }
+
+h2 {
+  margin: 0 0 1.1rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+p { margin: 0 0 1.1rem; }
+p:last-child { margin-bottom: 0; }
+
+/* Writing list: title and year as real columns, since the date is information. */
+.entries {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--rule);
+}
+
+.entries li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0 1.5rem;
+  align-items: baseline;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.entries .year {
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9375rem;
+}
+
+.entries .note {
+  grid-column: 1 / -1;
+  margin: 0.2rem 0 0;
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+strong { font-weight: 600; }
+
+.links {
+  margin-top: 3.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.75rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: from-font;
+}
+
+a:hover { text-decoration-thickness: 2px; }
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+@media (max-width: 30rem) {
+  .entries li { grid-template-columns: 1fr; }
+  .entries .year { margin-top: 0.15rem; }
+}
