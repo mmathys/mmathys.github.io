@@ -99,20 +99,18 @@
     }
 
     /* Line breaking. `balance` evens out short blocks so headings and captions
-       do not strand a word or two on the last line; `pretty` leaves long text
-       alone except to prevent orphans. Browsers without support just wrap
-       normally. */
+       do not strand a word or two on the last line. Browsers without support
+       just wrap normally.
+
+       Body text is deliberately left on the default greedy wrap. `pretty` is
+       orphan-avoidance in Chrome, but Safari implements it as a whole-paragraph
+       optimisation that pulls several lines short of the measure — very visible
+       on a phone, where the column is only a few words wide. */
     h1, h2, h3,
     figcaption,
     .eyebrow,
     .post-meta {
       text-wrap: balance;
-    }
-
-    p,
-    .lede,
-    li {
-      text-wrap: pretty;
     }
 
     body {
